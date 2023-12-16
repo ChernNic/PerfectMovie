@@ -48,7 +48,13 @@ public class FilmDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_film_data);
 
-
+        imageView = findViewById(R.id.cover_imageView);
+        title_textView = findViewById(R.id.title_TextView);
+        description_textView = findViewById(R.id.description_TextView);
+        date_textView = findViewById(R.id.date_TextView);
+        staff_textView = findViewById(R.id.staff_TextView);
+        webView = findViewById(R.id.webview);
+        progressBar = findViewById(R.id.progress_bar);
 
         Intent intent = getIntent();
         if (intent.hasExtra("id")) {
